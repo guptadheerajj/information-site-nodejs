@@ -1,0 +1,27 @@
+{
+	"name": "information-site-nodejs",
+	"version": "1.0.0",
+	"description": "information website https server",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node index.js",
+		"dev": "nodemon index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/guptadheerajj/information-site-nodejs.git"
+	},
+	"author": "Dheeraj Gupta",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/guptadheerajj/information-site-nodejs/issues"
+	},
+	"homepage": "https://github.com/guptadheerajj/information-site-nodejs#readme",
+	"devDependencies": {
+		"nodemon": "^3.1.10"
+	},
+	"dependencies": {
+		"uuid": "^11.1.0"
+	}
+}
