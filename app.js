@@ -91,9 +91,12 @@
 
 // Via Express -> callback based
 const express = require("express");
+const dotenv = require("dotenv");
 const fs = require("fs");
 const path = require("path");
+
 const app = express();
+dotenv.config();
 const PORT = process.env.PORT || 3000;
 
 function serveFile(filePath, res, status = 200) {
@@ -122,8 +125,11 @@ app.get("/contact-me", (req, res) => {
 	);
 });
 
-app.use((req, res) => {
+app.get("/*splat", (req, res) => {
 	serveFile(path.join(__dirname, "public", "404", "404.html"), res, 404);
 });
+// app.use((req, res) => {
+// 	serveFile(path.join(__dirname, "public", "404", "404.html"), res, 404);
+// });
 
 app.listen(PORT, () => console.log(`Express server running on port ${PORT}`));

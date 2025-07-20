@@ -19,6 +19,7 @@
 	},
 	"homepage": "https://github.com/guptadheerajj/information-site-nodejs#readme",
 	"devDependencies": {
+		"dotenv": "^17.2.0",
 		"nodemon": "^3.1.10"
 	},
 	"dependencies": {
